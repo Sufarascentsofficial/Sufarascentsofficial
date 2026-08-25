@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sufara Scents Official</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="logo"><span>𝕊</span> SUFARA SCENTS</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Perfumes</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <div class="hero-content">
+        <p class="small-title">MORE THAN A FRAGRANCE</p>
+        <h1>SUFARA<br><span>SCENTS</span></h1>
+        <p class="hero-text">Discover premium fragrances crafted to express elegance, confidence and identity.</p>
+        <a href="#products" class="gold-btn">SHOP NOW</a>
+    </div>
+    <div class="perfume-bottle">
+        <div class="bottle-cap"></div>
+        <div class="bottle">
+            <div class="bottle-logo">S</div>
+            <h3>SUFARA</h3>
+            <p>SCENTS</p>
+        </div>
+    </div>
+</section>
+
+<section class="features">
+    <div class="feature"><div>✦</div><h3>Premium Quality</h3><p>High-quality fragrance experience.</p></div>
+    <div class="feature"><div>♢</div><h3>Long Lasting</h3><p>Fragrance that stays with you.</p></div>
+    <div class="feature"><div>❖</div><h3>Luxury Experience</h3><p>Designed for elegance and confidence.</p></div>
+    <div class="feature"><div>✿</div><h3>Finest Ingredients</h3><p>Beautifully balanced fragrance notes.</p></div>
+</section>
+
+<section id="products" class="products-section">
+    <div class="section-title"><p>OUR COLLECTION</p><h2>Premium Perfumes</h2></div>
+    <div class="product-grid">
+        <div class="product-card">
+            <div class="product-image bottle-one"><span>S</span></div>
+            <h3>Sufara Royal</h3><p>Elegant &amp; Powerful</p><h4>PKR 2,499</h4>
+            <button onclick="orderProduct('Sufara Royal')">Order Now</button>
+        </div>
+        <div class="product-card">
+            <div class="product-image bottle-two"><span>S</span></div>
+            <h3>Sufara Gold</h3><p>Luxury &amp; Sophisticated</p><h4>PKR 2,999</h4>
+            <button onclick="orderProduct('Sufara Gold')">Order Now</button>
+        </div>
+        <div class="product-card">
+            <div class="product-image bottle-three"><span>S</span></div>
+            <h3>Sufara Oud</h3><p>Rich &amp; Long Lasting</p><h4>PKR 3,499</h4>
+            <button onclick="orderProduct('Sufara Oud')">Order Now</button>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="about">
+    <div class="about-content">
+        <p>ABOUT SUFARA SCENTS</p>
+        <h2>It's More Than<br>A Fragrance</h2>
+        <p>Sufara Scents Official is a premium perfume brand dedicated to creating memorable fragrances for people who value elegance, quality and individuality.</p>
+        <a href="#contact" class="gold-btn">CONTACT US</a>
+    </div>
+    <div class="about-design"><div class="gold-circle">S</div></div>
+</section>
+
+<section id="contact" class="contact">
+    <div class="section-title"><p>GET IN TOUCH</p><h2>Contact Sufara Scents</h2></div>
+    <div class="contact-container">
+        <div class="contact-info">
+            <div><h3>WhatsApp</h3><p>03370353745</p></div>
+            <div><h3>Facebook</h3><p>Sufara Scents Official</p></div>
+            <div><h3>Instagram</h3><p>@sufara_scents_official</p></div>
+            <div><h3>Location</h3><p>Quetta, Pakistan</p></div>
+        </div>
+        <form onsubmit="sendMessage(event)">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="gold-btn">SEND MESSAGE</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-logo">𝕊 SUFARA SCENTS</div>
+    <p>MORE THAN A FRAGRANCE — IT'S AN IDENTITY.</p>
+    <p class="copyright">© 2026 Sufara Scents Official. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
